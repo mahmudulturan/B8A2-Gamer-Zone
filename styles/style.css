@@ -242,7 +242,7 @@ li a {
 /* online game section styles */
 .online-games {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
 }
 
 .online-title {
@@ -262,6 +262,37 @@ li a {
 }
 
 
+/* play instant section styles */
+
+.play-instant{
+    max-width: 1440px;
+    margin: 0 auto 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.instant-about{
+    width: 50%;
+    text-align: end;
+    position: relative;
+    top: -200px;
+    left: -200px;
+}
+
+.instant-image{
+    width: 50%;
+}
+
+.primary-img{
+    width: 100%;
+}
+.secondary-img{
+    border-radius: 15px;
+    position: relative;
+    top: -270px;
+    left: -150px;
+}
+
 
 
 
@@ -275,7 +306,7 @@ li a {
 @media screen and (max-width:576px) {
 
     nav,
-    .gamers {
+    .gamers, .play-instant {
         flex-direction: column;
         padding: 0 20px;
     }
@@ -321,7 +352,14 @@ li a {
     .online-games{
         padding: 0 20px;
     }
-        
+    .instant-about{
+        width: 100%;
+        text-align: center;
+    }
+    .instant-image{
+        width: 100%;
+    }
+    
 
 
 }
