@@ -260,6 +260,32 @@ li a {
     font-weight: 500;
 }
 
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: black;
+    cursor: pointer;
+
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#container:hover .overlay{
+    opacity: 0.8;
+    
+} */
+
 
 /* play instant section styles */
 
@@ -651,14 +677,6 @@ footer {
         font-size: 11px
     }
 
-
-
-
-    /* .catagories-section{
-        display: grid;
-        grid-template-columns: repeat(3);
-    } */
-
     .image-absolute {
         position: absolute;
         top: 157px;
@@ -687,8 +705,116 @@ footer {
     }
     .follow-icon{
         margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,60px);
+        
     }
 
+}
 
+@media screen  and (min-width:576px) and (max-width: 768px) {
+   
+    nav
+    {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .banner-content{
+        flex-direction: column-reverse;
+    }
+    .banner-text-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        background-size: 113% 120%;
+        margin-bottom: 36px;
+    }
+    .banner-slogan {
+        font-size: 29px;
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 64px;
+        text-align: center;
+        margin: 0;
+    }
+    .banner-image{
+        width: 100%;
+        padding-right: 0;
+    }
 
+    .gamers{
+        flex-direction: column;
+    }
+    .gamers-image img{
+        width: 100%;
+    }
+
+    .gamer-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .play-instant {
+        flex-direction: column;
+    }
+    .instant-about{
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    .instant-image {
+        width: 100%;
+    }
+    .image-relative{
+        display: flex;
+        justify-content: end;
+    }
+    .image-absolute{
+        left: 0;
+        top: 510px;
+    }
+    .primary-img {
+        width: 85%;
+    }
+    .secondary-img{
+        width: 70%;
+    }
+    .careers-contain {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .careers-about {
+    padding-left: 0;
+    margin-bottom: 20px;
+    }
+    .careers-btn {
+        margin-top: 19px;}
+    .careers-image img{
+        width: 100%;
+    }
+    .catagories-contain {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .catagorie h3 {
+        font-size: 16px;
+    }
+    .catagorie img{
+        width: 50px;
+    }
+
+    .catagorie {
+        
+        justify-content: space-around;
+        gap: 3px;
+        padding: 1px;
+        align-items: center;
+    }
 }
