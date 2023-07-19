@@ -252,8 +252,8 @@ li a {
 
 .gamer-card {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    }
+    grid-template-columns: repeat(4, 1fr);
+}
 
 .card-title {
     color: #534C64;
@@ -264,14 +264,15 @@ li a {
 
 /* play instant section styles */
 
-.play-instant{
+.play-instant {
     max-width: 1440px;
     margin: 0 auto 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.instant-about{
+
+.instant-about {
     width: 50%;
     text-align: end;
     position: relative;
@@ -279,20 +280,220 @@ li a {
     left: -200px;
 }
 
-.instant-image{
+.instant-image {
     width: 50%;
 }
 
-.primary-img{
+.primary-img {
     width: 100%;
 }
-.secondary-img{
-    border-radius: 15px;
+
+.image-relative {
     position: relative;
-    top: -270px;
+}
+
+.image-absolute {
+    position: absolute;
+    top: 500px;
     left: -150px;
 }
 
+/* careers section styles */
+.careers-section {
+    margin-top: 200px;
+    background-color: #F948B2;
+    margin-bottom: 120px;
+}
+
+.careers-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.careers-about {
+    padding-left: 240px;
+}
+
+.careers-title {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.careers-txt {
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.careers-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.careers-btn {
+    margin-top: 40px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #F948B2;
+}
+.careers-image img{
+    width: 100%;    
+}
+
+
+
+/* catagories section styles */
+
+.catagories-section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.catagories-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+}
+
+
+.catagorie {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 10px;
+    /* width: 240px;
+    height: 80px; */
+    align-items: center;
+}
+
+.catagorie h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.catagorie:hover {
+    border: 1px solid #F948B2;
+    border-radius: 55px;
+    color: #F948B2;
+}
+
+/* footer section styles */
+
+footer {
+    margin-top: 120px;
+    background-color: #0B0223;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.amer {
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo-text {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.footer-link ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.footer-link ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.follow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-twitter {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.fa-facebook {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+#white-youtube {
+    color: white;
+    width: 57.13px;
+    height: 40px;
+}
+
+.fa-linkedin {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.fa-instagram {
+    color: white;
+    width: 40px;
+    height: 40px;
+
+}
+
+.fa-apple {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.terms ul {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms ul a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.txt-copyright {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 130px;
+}
 
 
 
@@ -306,7 +507,8 @@ li a {
 @media screen and (max-width:576px) {
 
     nav,
-    .gamers, .play-instant {
+    .gamers,
+    .play-instant, .careers-contain {
         flex-direction: column;
         padding: 0 20px;
     }
@@ -343,23 +545,58 @@ li a {
     .gamers-about {
         text-align: center;
     }
+
     .gamer-card {
         display: grid;
         text-align: center;
-        grid-template-columns: repeat(1,1fr);
-        }
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-    .online-games{
+    .online-games {
         padding: 0 20px;
     }
-    .instant-about{
+
+    .instant-image {
         width: 100%;
-        text-align: center;
     }
-    .instant-image{
+
+    .instant-about {
+        top: 0;
+        left: 0;
+        text-align: center;
         width: 100%;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+
+    .footer-link ul,
+    .terms ul {
+        flex-wrap: wrap;
+    }
+    .careers-about{
+        padding: 0;
+    }
+
+
+
+
+    /* .catagories-section{
+        display: grid;
+        grid-template-columns: repeat(3);
+    } */
+
+    /* .image-relative img{
+        width: 80%;
+    }
+    .image-absolute img{
+        position: relative;
+        width: 40%;
+        left: 200px;
     }
     
+     */
 
 
 }
