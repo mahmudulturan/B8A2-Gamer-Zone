@@ -135,7 +135,6 @@ li a {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 0;
-    margin-top: 148px;
 }
 
 .banner-title {
@@ -348,9 +347,7 @@ li a {
     border-radius: 50px;
     color: #F948B2;
 }
-.careers-image img{
-    width: 100%;    
-}
+
 
 
 
@@ -508,7 +505,8 @@ footer {
 
     nav,
     .gamers,
-    .play-instant, .careers-contain {
+    .play-instant,
+    .careers-contain {
         flex-direction: column;
         padding: 0 20px;
     }
@@ -522,7 +520,27 @@ footer {
     .banner-text-content {
         padding: 0;
         width: 100%;
-        background-size: cover;
+        background-size: 113% 120%;
+        margin-bottom: 36px;
+    }
+
+    .banner-slogan {
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 43px;
+        text-align: center;
+    }
+
+    .b-button {
+        padding: 10px 25px;
+    }
+
+    .banner-feature li {
+        margin-top: 14px;
+        font-size: 18px;
     }
 
     .banner-image {
@@ -565,6 +583,7 @@ footer {
         left: 0;
         text-align: center;
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .footer-section {
@@ -575,8 +594,61 @@ footer {
     .terms ul {
         flex-wrap: wrap;
     }
-    .careers-about{
+
+    .careers-title {
+        font-size: 32px;
+    }
+
+    .careers-txt {
+        font-size: 12px
+    }
+    .data-title {
+        font-size: 12px;}
+
+    .careers-btn {
+            margin-top: 25px;
+            font-size: 10px;
+            padding: 11px 13px;
+            margin-bottom: 120px;
+    }
+    .careers-about {
         padding: 0;
+    }
+
+    .careers-image img {
+        width: 100%;
+    }
+    .catagories-contain {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .catagorie h3 {
+        font-size: 10px;
+    }
+    .catagorie img{
+        width: 40px;
+    }
+
+    .catagorie {
+        
+        justify-content: space-around;
+        gap: 3px;
+        padding: 1px;
+        align-items: center;
+    }
+
+    #unleash {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 24px
+    }
+
+    .card-title {
+        font-size: 11px
     }
 
 
@@ -587,16 +659,36 @@ footer {
         grid-template-columns: repeat(3);
     } */
 
-    /* .image-relative img{
-        width: 80%;
+    .image-absolute {
+        position: absolute;
+        top: 157px;
+        left: 10px;
     }
-    .image-absolute img{
+
+    .primary-img {
+        width: 75%;
+    }
+
+    .image-absolute img {
+        width: 47%;
+    }
+
+    .image-relative {
         position: relative;
-        width: 40%;
-        left: 200px;
+        display: flex;
+        justify-content: end;
     }
     
-     */
+   
+   footer ul{
+        margin: 0;
+        padding: 0;
+
+    }
+    .follow-icon{
+        margin-top: 40px;
+    }
+
 
 
 }
