@@ -5,14 +5,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-/* custom properties */
-
-::root {
-   
-    --primary-clr: #FF42A5;
-    
-}
-
 /* shared style */
 
 .primary-color {
@@ -285,11 +277,12 @@ li a {
     width: 95%;
     height: 99%;
     border-radius: 15px;
+    border: 2px solid #F948B2;
     opacity: 1; 
 }
 
 .content {
-    color: white;
+    color: #F948B2;
     text-align: center;
 }
 
